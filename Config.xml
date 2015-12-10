@@ -1,2 +1,9 @@
 <?xml version="1.0"?>
-<CalendarUrl>https://calendar.google.com/calendar/ical/en.german%23holiday%40group.v.calendar.google.com/public/basic.ics</CalendarUrl>
+<Settings>
+
+    <DownloadPath value ="Z:\" />
+
+    <Calendar url="https://calendar.google.com/calendar/ical/en.german%23holiday%40group.v.calendar.google.com/public/basic.ics" filename="german_holidays.ics" />
+    <Calendar url="https://calendar.google.com/calendar/ical/e_2_en%23weeknum%40group.v.calendar.google.com/public/basic.ics" filename="week_numbers.ics" />
+
+</Settings>
