@@ -1,4 +1,8 @@
-﻿$config = [xml](get-content .\Config.xml)
+﻿"Google Calendar Backup"
+"https://github.com/christianspecht/google-calendar-backup"
+""
+
+$config = [xml](get-content .\Config.xml)
 
 $datesubfolder = $config.Settings.SubfolderPerDate.value
 $path = $config.Settings.DownloadPath.value
@@ -13,6 +17,8 @@ if ($datesubfolder -eq "1")
 
 "Download path: " + $path
 ""
+
+start-sleep -s 3
 
 foreach ($calendar in $config.Settings.Calendar)
 {
