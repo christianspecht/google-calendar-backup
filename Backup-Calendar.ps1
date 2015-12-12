@@ -7,6 +7,13 @@ $config = [xml](get-content .\Config.xml)
 $datesubfolder = $config.Settings.SubfolderPerDate.value
 $path = $config.Settings.DownloadPath.value
 
+if (!(test-path $path))
+{
+    "Download path doesn't exist: " + $path
+    start-sleep -s 10
+    break
+}
+
 if ($datesubfolder -eq "1")
 {
     $subfolder = Get-Date -format "yyyyMMdd_HHmmss"
